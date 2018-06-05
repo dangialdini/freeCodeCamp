@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Build a Wikipedia Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h2>Wikipedia Viewer</h2>
+    <div id="search-box">
+        <div id="search-random">
+            <h4>Click
+                <a href='https://en.wikipedia.org/wiki/Special:Random' target='_blank'>
+                    here
+                </a>
+                for a random article
+            </h4>
+        </div>
+        <div id="search-icon">
+            <input id="search">
+            <a id="search-wiki">
+                <i class="fa fa-search"></i>
+            </a>
+            <!-- </div>
+        <h4>Click icon to search</h4> -->
+        </div>
+
+        <div id="search-results">
+
+        </div>
+
+        <script>
+            document.querySelector("#search").addEventListener('keyup', event => {
+                if (event.key !== 'Enter') return false;
+                makeApiRequest();
+                event.preventDefault();
+            });
+        </script>
+</body>
+</html>
