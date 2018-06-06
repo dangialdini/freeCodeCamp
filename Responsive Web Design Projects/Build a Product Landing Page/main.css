@@ -1,0 +1,118 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 90px;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    top: 0;
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    z-index: 10000;
+    background-color: white;
+}
+
+#header>a {
+    display: block;
+}
+
+header img {
+    width: 150px;
+}
+
+header nav a.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+header nav a.nav-link:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+}
+
+#email-me,
+#features-div,
+#introducing {
+    text-align: center;
+    padding: 30px;
+    border-bottom: 1px solid lightgrey;
+    margin: 0 50px;
+}
+
+#email-me h3{
+    margin-top: 0;
+}
+
+#email-div {
+    margin: 20px 0;
+}
+
+input#email {
+    height: 20px;
+    width: 250px;
+}
+
+input#submit {
+    height: 25px;
+    width: 125px;
+    background: cornflowerblue;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+#features-div {
+    text-align: center;
+}
+
+#features,
+#specs {
+    font-size: 0.8em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#features .feature {
+    flex: 1 1 50%;
+}
+
+#feature .feature p,
+#feature .feature b {
+    font-size: 0.9em;
+}
+
+#specs-div {
+    text-align: center;
+    padding: 30px;
+    margin: 0 50px;
+}
+
+.spec {
+    flex: 1 1 50%;
+    flex-direction: row;
+    display: flex;
+    text-align: left;
+}
+
+.spec #heading {
+    margin-right: 10px;
+    min-width: 85px;
+}
+
+.spec #description {
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
