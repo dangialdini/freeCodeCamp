@@ -30,7 +30,6 @@ $(document).ready(function () {
         var url = "https://twitter.com/intent/tweet?text=" + quotes[randonNumber].content +
             " -" + quotes[randonNumber].title;
         var strippedurl = url.replace(/<(?:.|\n)*?>/gm, '');
-        debugger
         window.open(strippedurl);
     });
 
